@@ -19,7 +19,7 @@ harmful---they are easy to loose control over and hard to rotate systematically
 adversary to perform anything from mining digital currencies [2] to cracking
 passwords.
 
-The *AWS Federation Proxy* (AFP) Project [3], developed at ImmobilienScout24
+The *AWS Federation Proxy* (AFP) Project [3], developed at ImmobilienScout24,
 solves the issue for both machines and humans by using a *Custom Federation
 Broker* and the *Secure Token Service* (STS) with IAM roles and temporary
 credentials. This talk introduces the project, the various components it
