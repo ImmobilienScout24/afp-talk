@@ -13,10 +13,11 @@ authentication problems:
 * Authenticating machines (servers, applications, clusters etc...)
 
 At scale, the common practice to use *IDentity and Access Management* (IAM)
-users and generate static credentials is generally considered harmful---they
-are easy to loose control over and hard to rotate systematically [1]. Hacked
-credentials are a sought after commodity and allow a digital adversary to
-perform anything from mining digital currencies [2] to cracking passwords.
+users and generate static credentials / access keys is generally considered
+harmful---they are easy to loose control over and hard to rotate systematically
+[1]. Hacked credentials are a sought after commodity and allow a digital
+adversary to perform anything from mining digital currencies [2] to cracking
+passwords.
 
 The *AWS Federation Proxy* (AFP) Project [3], developed at ImmobilienScout24
 solves the issue for both machines and humans by using a *Custom Federation
