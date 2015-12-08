@@ -10,7 +10,7 @@ When using *Amazon Web Services*  (AWS) from the outside, there are two main
 authentication problems:
 
 * Authenticating humans (employees, users, contributors etc...)
-* Authenticating machines (servers, applications, clustes etc...)
+* Authenticating machines (servers, applications, clusters etc...)
 
 At scale, the common practice to use *IDentity and Access Management* (IAM)
 users and generate static credentials is generally considered harmful---they
