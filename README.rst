@@ -23,8 +23,8 @@ solves the issue for both machines and humans by using a *Custom Federation
 Broker* and the *Secure Token Service* (STS) with IAM roles and temporary
 credentials.
 
-In this talk I will introduce The AFP Project, the various components it
-consist of, and explain how we can largely eliminate IAM users and static
+In this talk I will introduce the project, the various components it consist
+of, and explain how we can use it to largely eliminate IAM users and static
 credentials.
 
 [1]: https://99designs.com/tech-blog/blog/2015/10/26/aws-vault/
