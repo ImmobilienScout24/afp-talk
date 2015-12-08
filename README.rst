@@ -25,6 +25,6 @@ credentials. This talk introduces the project, the various components it
 consists of, and explains how we can use it to largely eliminate IAM users and
 static credentials.
 
-[1]: https://99designs.com/tech-blog/blog/2015/10/26/aws-vault/
-[2]: http://www.devfactor.net/2014/12/30/2375-amazon-mistake/
-[3]: http://immobilienscout24.github.io/afp/
+* [1]: https://99designs.com/tech-blog/blog/2015/10/26/aws-vault/
+* [2]: http://www.devfactor.net/2014/12/30/2375-amazon-mistake/
+* [3]: http://immobilienscout24.github.io/afp/
