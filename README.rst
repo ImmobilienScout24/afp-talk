@@ -21,8 +21,8 @@ perform anything from mining digital currencies [2] to cracking passwords.
 The *AWS Federation Proxy* (AFP) Project [3], developed at ImmobilienScout24
 solves the issue for both machines and humans by using a *Custom Federation
 Broker* and the *Secure Token Service* (STS) with IAM roles and temporary
-credentials. In this talk I will introduce the project, the various components
-it consist of, and explain how we can use it to largely eliminate IAM users and
+credentials. This talk introduces the project, the various components it
+consists of, and explains how we can use it to largely eliminate IAM users and
 static credentials.
 
 [1]: https://99designs.com/tech-blog/blog/2015/10/26/aws-vault/
