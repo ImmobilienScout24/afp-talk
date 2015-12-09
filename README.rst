@@ -6,14 +6,14 @@ The AFP Project: secure cloud authentication for machines and humans.
 Abstract
 --------
 
-When using *Amazon Web Services*  (AWS) from the outside, there are two main
+When using *Amazon Web Services* (AWS) services from the outside AWS, there are two main
 authentication problems:
 
 * Authenticating humans (employees, users, contributors etc...)
 * Authenticating machines (servers, applications, clusters etc...)
 
 At scale, the common practice to use *IDentity and Access Management* (IAM)
-users and generate static credentials / access keys is generally considered
+users with static credentials / access keys is generally considered
 harmful---they are easy to loose control over and hard to rotate systematically
 [1]. Hacked credentials are a sought after commodity and allow a digital
 adversary to perform anything from mining digital currencies [2] to cracking
