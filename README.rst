@@ -41,8 +41,7 @@ Content
 All Content is...
 
 * Copyright 2015 Immobilien Scout GmbH
-* Licensed under the terms of [Attribution-ShareAlike 3.0 Unported
-  `(CC BY-SA 3.0) <http://creativecommons.org/licenses/by-sa/3.0/>`_
+* Licensed under the terms of `Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0) <http://creativecommons.org/licenses/by-sa/3.0/>`_
 
 Included Dependencies
 ---------------------
