@@ -104,8 +104,8 @@ $ pip install afp-cli
 
 <[consolecode]
 $ afp
-redecorator read-only
-smarthome access-all-areas, read-only
+redecorator     read-only
+smarthome       access-all-areas, read-only
 $ afp smarthome
 ...
 (AWS: smarthome/access-all-areas 59 min) $ aws s3 ls
