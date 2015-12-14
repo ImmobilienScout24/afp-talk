@@ -20,7 +20,7 @@
 
 * IAM Users
 * Static Credentials
-* This is Bad
+* This is Bad™
 
 --1cm--
 
@@ -31,13 +31,103 @@
 * Run on multiple accounts
 * Reduce blast radius in case of compromise
 * Applications communicate over public internet
-* Migration in progress
+* Currently in hybrid-mode while migration in progress
+
+== afp-core ==
+
+==== Outline ====
+
+\tableofcontents[currentsection]
+
+==== afp-core ====
+
+* ''Custom Federation Broker''
+* Different Providers
+** AD Group Provider (Humans)
+** IP Provider       (Machines)
+* Webapplication
+* One of he few places left that ''does'' have static credentials
 
 ==== Connect AD --> AWS (Humans) ====
 
-* Special groups in AD
-* '''aws-accout-role'''
+* Special groups in AD: @aws-accout-role@
 * AD users are members of such groups
-* E.g. '''aws\_redecorator\_read-only'''
-* --> role: '''read\* (Yes it is configurable)
-_only''' in accout '''redocorator'''
+* E.g. @aws\_redecorator\_read-only@
+* --> role: @read-only@ in accout @redecorator@
+* (Yes it is configurable)
+
+==== Schematic ====
+
+== afp-web ==
+
+==== Outline ====
+
+\tableofcontents[currentsection]
+
+==== afp-web ====
+
+* Web-frontend for afp-core
+* Give an overview of all available accounts and their usable roles for the \
+  logged in user
+* Get and show temporary credentials for the selected account and role
+* Automatic login to the AWS management console for the desired account
+
+==== Screenshot ====
+
+TODO
+
+== afp-cli ==
+
+==== Outline ====
+
+\tableofcontents[currentsection]
+
+==== afp-cli ====
+
+* Console/shell frontend for afp-core
+* List available accounts and roles
+* Open subshell with exported AWS creds
+* Alternatively: display or write
+
+==== Install ====[containsverbatim]
+
+<[consolecode]
+$ pip install afp-cli
+[consolecode]>
+
+* At our company: this just works!
+* (Mainly because @https://afp@ can be resolved)
+
+==== Use ====[containsverbatim]
+
+<[consolecode]
+$ afp
+redecorator read-only
+smarthome access-all-areas, read-only
+$ afp smarthome
+...
+(AWS: smarthome/access-all-areas 59 min) $ aws s3 ls
+...
+[consolecode]>
+
+Alternatives --> see @README@
+
+== afp-proxy / alppaca ==
+
+==== Outline ====
+
+\tableofcontents[currentsection]
+
+==== afp-proxy / alppaca ====
+
+* Probably the most interesting component
+* Enables temporary credentials for machines
+* Provides an ''Instance Metadata Service'' compatible interface
+
+--1cm--
+
+* --> Machines in data-center are ''cloud-ready''
+
+=== Schematic ===
+
+TODO
