@@ -7,6 +7,7 @@
 \usepackage{textcomp}
 \usepackage{graphicx}
 \usepackage{lmodern}
+\usepackage{textpos}
 
 \usepackage{beamerthemesplit}
 
@@ -58,6 +59,7 @@
 
 \author{Valentin Haenel}
 \institute{Senior System Developer \\
+\includegraphics[height=1cm,width=2cm]{images/logo.pdf}\\
 \url{http://immobilienscout24.de}}
 
 \title{The AFP Project}
@@ -77,6 +79,11 @@
         \parbox[b]{8cm}{{\tiny\CcNote{\CcLongnameBySa}}} \\
     \end{tabular}
 \end{center}\end{frame}
+
+\addtobeamertemplate{frametitle}{}{%
+\begin{textblock*}{100mm}(.85\textwidth,-1cm)
+\includegraphics[height=1cm,width=2cm]{images/logo.pdf}
+\end{textblock*}}
 
 \input{slides.wiki.tex}
 
