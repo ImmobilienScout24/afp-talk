@@ -1,128 +1,43 @@
-== Section 1 ==
+== Introduction ==
 
 ==== Outline ====
 
 \tableofcontents[currentsection]
 
-==== slide 1 ====
+==== About Me ====
 
-* bullet 1
-* bullet 2
-* bullet 3
+* Senior System Developer @ Immobilienscout24
+* Since 01.12.2015 (Freelancer since June)
+* --> Very new to AWS
 
-==  Section 2 ==
+== IAM Users and Staic Credentials ==
 
 ==== Outline ====
 
 \tableofcontents[currentsection]
 
-=== Subsection 1 ===
+==== IAM Users and Static Credentials ====
 
-==== Outline ====
+* IAM Users
+* Static Credentials
+* This is Bad
 
-\tableofcontents[currentsection,currentsubsection]
+--1cm--
 
-==== Image Slide ====
+* --> Mine Bitcoins if lost
 
-<[center]
-    <<<images/python-logo.pdf, scale=0.40>>>
-[center]>
+==== Multi-Account Paradigm ====
 
-==== slide 2 ====
+* Run on multiple accounts
+* Reduce blast radius in case of compromise
+* Applications communicate over public internet
+* Migration in progress
 
-* bullet 1
-* bullet 2
-* bullet 3
+==== Connect AD --> AWS (Humans) ====
 
-=== Subsection 2 ===
-
-==== Outline ====
-
-\tableofcontents[currentsection,currentsubsection]
-
-==== Block ====
-
-<[block]{Block Title}
-Block contents
-[block]>
-
-==== Special Symbols ====
-
-* Tilde: \~{}
-* Tilde: \textasciitilde{}
-* Caret: \^{}
-* Hash: \#
-* Braces: \{\}
-* Dollar: \$
-* Double en: -{}-
-* At in Typewriter: {\tt stash@\{0\} }
-* Exclamation mark in alert: \alert{Attention!}
-
-or use: nowiki
-
-==== Correct Escapes  ====
-
-This only works with my patched version of wiki2beamer.
-
-* @HEAD \@ HEAD@
-* Attention\! Attention\!
-
-==== Verbatim ====[fragile]
-
-\begin{verbatim}
-
-wiki2beamer slides.wiki > slides.wiki.tex
-pdflatex slides.tex
-
-\end{verbatim}
-
-[frame]>
-
-==== Verbatim2 ====[containsverbatim]
-
-<[verbatim]
-
-wiki2beamer slides.wiki > slides.wiki.tex
-pdflatex slides.tex
-
-[verbatim]>
-
-==== Verbatim Block ====[containsverbatim]
-
-<[block]{Verbatim Block}
-<[verbatim]
-
-wiki2beamer slides.wiki > slides.wiki.tex
-pdflatex slides.tex
-
-[verbatim]>
-[block]>
-
-==== Code ====[containsverbatim]
-
-\begin{pycode}
-def python_func(arg):
-    print 'arg was: ', arg
-
-python_func('Hello World!")
-\end{pycode}
-
-==== Code from file ====
-
-\pyfile{code/code.py}
-
-==== Example ====
-
-<[example]
-    This is an example
-[example]>
-
-==== Conclusion ====
-
-* Open source tools used to make this presentation:
-** \href{http://wiki2beamer.sourceforge.net/}{Wiki2beamer}
-** \href{http://latex-beamer.sourceforge.net/}{\LaTeX beamer}
-** \href{http://projects.gnome.org/dia/}{Dia}
-** \href{http://pygments.org/}{Pygments}
-** \href{http://code.google.com/p/minted/}{Minted}
-** \href{https://bitbucket.org/john2x/solarized-pygment}{Solarized theme for pygments}
+* Special groups in AD
+* '''aws-accout-role'''
+* AD users are members of such groups
+* E.g. '''aws\_redecorator\_read-only'''
+* --> role: '''read\* (Yes it is configurable)
+_only''' in accout '''redocorator'''
