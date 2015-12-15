@@ -139,3 +139,16 @@ Alternatives --> see @README@
 ==== Schematic ====
 
 TODO
+
+
+== outro ==
+
+==== Outline ====
+
+\tableofcontents[currentsection]
+
+==== Links ====
+
+* All of it is open-source!
+
+* \href{https://immobilienscout24.github.io/afp/}{https://immobilienscout24.github.io/afp/}
