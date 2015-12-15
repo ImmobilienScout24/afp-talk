@@ -83,6 +83,9 @@
 * Different providers
 ** Linux group provider (humans)
 ** IP provider       (machines)
+
+==== afp-core ====
+
 * A webapplication
 * One of the few places left that ''does'' have static credentials
 * Uses ''Secure Token Service'' (STS) and ''AssumeRole''
