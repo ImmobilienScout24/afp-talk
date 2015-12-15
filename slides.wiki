@@ -172,15 +172,36 @@ Alternatives --> see @README@
 
 \tableofcontents[currentsection]
 
+==== ''Instance Metadata Service'' (IMS) ====[containsverbatim]
+
+* Available on @169.254.169.254.169:80@ on every EC2 instance
+* Provides information about the machines
+* Also provides temporary security credentials
+
+<[consolecode]
+$ curl 169.254.169.254/latest/meta-data/iam/security-credentials/
+test_role
+$ curl 169.254.169.254/latest/meta-data/iam/security-credentials/test_role
+'{"Code": "Success",
+  "AccessKeyId": "ASIAI",
+  "SecretAccessKey": "oieDhF",
+  "Token": "6jmePdXNehjPVt7CZ1WMkKrqB6zDc34d2vpLej",
+  "Expiration": "2015-04-17T13:40:18Z",
+  "Type": "AWS-HMAC"}'
+[consolecode]>
+
 ==== afp-alppaca ====
 
+* ''A Local Prefetch Proxy for Amazon CredentiAls'' (alppaca)
 * Probably the most interesting component
 * Enables temporary credentials for machines
-* Provides an ''Instance Metadata Service'' compatible interface
+* Provides an ''Instance Metadata Service'' (IMS) compatible interface
 
 --1cm--
 
 * --> Machines in data-center are ''cloud-ready''
+* (Yes, all 2000 of them can do this today!)
+
 
 ==== Schematic ====
 
@@ -191,9 +212,11 @@ Alternatives --> see @README@
 ==== Details ====
 
 * Listens on @169.254.169.254:80@
+** Uses Linux firewall magic (@iptables@)
 * Prefetches temporary credentials and stores them in memory
 * Always has a valid set of credentials
-* No changes to Amazon SDKs needed
+** Always able to deliver them in < 1 second
+** No changes to Amazon SDKs needed
 
 == Epilogue ==
 
