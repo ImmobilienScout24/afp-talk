@@ -105,7 +105,7 @@ TODO
 $ pip install afp-cli
 [consolecode]>
 
---2cm--
+--1cm--
 
 * At our company: this just works!
 * (Mainly because @https://afp@ can be resolved)
