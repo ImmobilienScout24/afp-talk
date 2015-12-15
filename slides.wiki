@@ -67,7 +67,6 @@
 ** Modularise our data-center(s)
 ** Feasible and incremental exit-strategy
 * Rules:
-** Applications communicate over public internet
 ** Use well-defined interfaces
 ** No VPN connections between accounts
 
@@ -207,7 +206,6 @@ $ curl 169.254.169.254/latest/meta-data/iam/security-credentials/test_role
 ==== afp-alppaca ====
 
 * ''A Local Prefetch Proxy for Amazon CredentiAls'' (alppaca)
-* Probably the most interesting component
 * Enables temporary credentials for machines
 * Provides an ''Instance Metadata Service'' (IMS) compatible interface
 
