@@ -90,13 +90,18 @@
 * One of the few places left that ''does'' have static credentials
 * Uses ''Secure Token Service'' (STS) and ''AssumeRole''
 
-==== Connect AD --> AWS (Humans) ====
+==== Connect ''Active Directory'' (AD) --> AWS (Humans) ====
 
 * Special groups in AD: @aws-<ACCOUNT>-<ROLE>@
 * AD users are members of such groups
 * E.g. @aws\_account1\_read-only@
 * --> role: @account@ in accout @redecorator@
 * (Yes, the regex it is configurable)
+
+--1cm--
+
+* Note: in our case it is AD, but it could be anything
+* LDAP, Linux Users and Groups etc...
 
 ==== Schematic ====
 
@@ -157,7 +162,9 @@ $ pip install afp-cli
 
 * At our company: this just works!
 * (Mainly because @https://afp@ can be resolved)
-* --> Otherwise use @index-url@/@--index-url@
+** Otherwise use:
+** --> @index-url@(config)
+** --> @-{}-index-url@(command-line)
 
 ==== Use ====[containsverbatim]
 
@@ -184,6 +191,8 @@ Alternatives --> see @README@
 * Available on @169.254.169.254.169:80@ on every EC2 instance
 * Provides information about the machines
 * Also provides temporary security credentials
+
+--1cm--
 
 <[consolecode]
 $ curl 169.254.169.254/latest/meta-data/iam/security-credentials/
@@ -222,8 +231,25 @@ $ curl 169.254.169.254/latest/meta-data/iam/security-credentials/test_role
 ** Uses Linux firewall magic (@iptables@)
 * Prefetches temporary credentials and stores them in memory
 * Always has a valid set of credentials
-** Always able to deliver them in < 1 second
+** Always able to deliver them in sub 1 second
 ** No changes to Amazon SDKs needed
+* Roles are in the special @dc-account@
+
+==== Special Feature: Under the Hood @AssumeRole@ ====
+
+* afp-alppaca can be configured to perform an @AssumeRole@ under the hood
+* The data-center machine can appear to be in any one of our accounts
+* Requires a role for that machine in that account and a ''trusted principle'' \
+  to enable the @AssumeRole@ call
+
+==== Further Uses: on EC2 in the Cloud ====
+
+* Run @afp-alppaca@ on an EC2 instance?
+* Yes, to allow cross-account access
+
+--1cm--
+
+* More Linux magic needed
 
 == Epilogue ==
 
