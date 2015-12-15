@@ -46,7 +46,7 @@
 ** AD Group Provider (Humans)
 ** IP Provider       (Machines)
 * Webapplication
-* One of he few places left that ''does'' have static credentials
+* One of the few places left that ''does'' have static credentials
 
 ==== Connect AD --> AWS (Humans) ====
 
