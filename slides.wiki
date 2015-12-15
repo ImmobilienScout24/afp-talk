@@ -122,9 +122,14 @@
 
 ==== Screenshot ====
 
-
 <[center]
 <<<images/afp-web.png, scale=0.3>>>
+[center]>
+
+==== Screenshot ====
+
+<[center]
+<<<images/screenshot-credentials.png, scale=0.3>>>
 [center]>
 
 == afp-cli ==
