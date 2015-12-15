@@ -7,8 +7,14 @@
 ==== About Me ====
 
 * Senior System Developer @ Immobilienscout24
+* Doing Python and Cloud
 * Since 01.12.2015 (Freelancer since June)
 * --> Very new to AWS
+
+--1cm--
+
+* My Twitter: \href{https://twitter.com/esc\_\_\_}{@\@esc\_\_\_@}
+* Company Twitter: \href{https://twitter.com/IS24\_Developer}{@\@IS24\_Developer@}
 
 == IAM Users and Staic Credentials ==
 
