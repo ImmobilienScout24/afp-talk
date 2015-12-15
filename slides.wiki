@@ -151,7 +151,7 @@ Alternatives --> see @README@
 <<<images/alppaca.pdf, scale=0.3>>>
 [center]>
 
-==== Details =====
+==== Details ====
 
 * Listens on @169.254.169.254:80@
 * Prefetches temporary credentials and stores them in memory
