@@ -35,7 +35,7 @@ static credentials.
 Author
 =======
 
-Valentin Haenel <<valentin@immobilienscout24.de>>
+Valentin Haenel «valentin@immobilienscout24.de»
 
 Dependencies
 ============
