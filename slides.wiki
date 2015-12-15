@@ -28,7 +28,7 @@
 
 ==== Multi-Account Paradigm ====
 
-* Run on multiple accounts
+* We use multiple accounts
 * Reduce blast radius in case of compromise
 * Applications communicate over public internet
 * Currently in hybrid-mode while migration in progress
