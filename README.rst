@@ -32,6 +32,22 @@ static credentials.
 * [2]: http://www.devfactor.net/2014/12/30/2375-amazon-mistake/
 * [3]: http://immobilienscout24.github.io/afp/
 
+Author
+=======
+
+Valentin Haenel <<valentin@immobilienscout24.de>>
+
+Dependencies
+============
+
+* Python
+* `LaTeX Beamer <https://bitbucket.org/rivanvx/beamer/wiki/Home>`_
+* `wiki2beamer <http://wiki2beamer.sourceforge.net/>`_ (included)
+* `Pygments <http://pygments.org/>`_
+* `Solarized Theme for Pygments <https://bitbucket.org/john2x/solarized-pygment/src/b9455fbdc902/solarized.py>`_ (included)
+* `Minted <http://code.google.com/p/minted/>`_ (included)
+* `ccBeamer <http://blog.hartwork.org/?p=52>`_ (included)
+
 License
 =======
 
