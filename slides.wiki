@@ -4,17 +4,21 @@
 
 \tableofcontents[currentsection]
 
-==== About Me ====
+==== About Company ====
 
-* Senior System Developer @ Immobilienscout24
-* Doing Python and Cloud
-* Since 01.12.2015 (Freelancer since June)
-* --> Very new to AWS
+* \href{http://immobilienscout24.de}{Immobilienscout24}
+* \href{https://twitter.com/IS24\_Developer}{@\@IS24\_Developer@}
 
 --1cm--
 
-* Company Twitter: \href{https://twitter.com/IS24\_Developer}{@\@IS24\_Developer@}
-* My Twitter: \href{https://twitter.com/esc\_\_\_}{@\@esc\_\_\_@}
+* 2000 Machines in data-center
+* 17 Years in IT
+
+==== About Me ====
+
+* Senior System Developer
+* Doing Python and Cloud
+* \href{https://twitter.com/esc\_\_\_}{@\@esc\_\_\_@}
 
 == IAM Users and Staic Credentials ==
 
