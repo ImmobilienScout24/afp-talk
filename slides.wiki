@@ -89,7 +89,10 @@
 
 ==== Screenshot ====
 
-TODO
+
+<[center]
+<<<images/afp-web.png, scale=0.3>>>
+[center]>
 
 == afp-cli ==
 
