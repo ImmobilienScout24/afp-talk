@@ -64,6 +64,10 @@
 
 ==== Schematic ====
 
+<[center]
+<<<images/afp-core.pdf, scale=0.3>>>
+[center]>
+
 == afp-web ==
 
 ==== Outline ====
