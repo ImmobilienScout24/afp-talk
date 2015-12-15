@@ -53,6 +53,7 @@
 ** IP provider       (machines)
 * A webapplication
 * One of the few places left that ''does'' have static credentials
+* Uses ''Secure Token Service'' (STS) and ''AssumeRole''
 
 ==== Connect AD --> AWS (Humans) ====
 
