@@ -34,6 +34,18 @@
 * Easy and secure AWS service usage
 * Temporary credentials for machines and humans
 
+==== Our Solution ====
+
+<[center]
+<<<images/solution.pdf, scale=0.25>>>
+[center]>
+
+==== Enter: The AFP Project ====
+
+<[center]
+<<<images/solution-afp.pdf, scale=0.25>>>
+[center]>
+
 ==== IAM Users and Static Credentials ====
 
 * ''Identity and Access Management'' (IAM) Users
@@ -46,18 +58,6 @@
 --1cm--
 
 * --> Mine Bitcoins if lost
-
-==== Our Solution ====
-
-<[center]
-<<<images/solution.pdf, scale=0.25>>>
-[center]>
-
-==== Enter: The AFP Project ====
-
-<[center]
-<<<images/solution-afp.pdf, scale=0.25>>>
-[center]>
 
 ==== Multi-Account Paradigm ====
 
