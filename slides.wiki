@@ -52,6 +52,12 @@
 <<<images/solution.pdf, scale=0.25>>>
 [center]>
 
+==== Enter The AFP Project ====
+
+<[center]
+<<<images/solution-afp.pdf, scale=0.25>>>
+[center]>
+
 ==== Multi-Account Paradigm ====
 
 * We use multiple AWS accounts
