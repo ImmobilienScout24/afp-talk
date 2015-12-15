@@ -173,7 +173,7 @@ $ afp smarthome
 
 Alternatives --> see @README@
 
-== afp-proxy / alppaca ==
+== afp-alppaca ==
 
 ==== Outline ====
 
