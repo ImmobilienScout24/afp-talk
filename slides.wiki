@@ -64,14 +64,12 @@
 * We use multiple AWS accounts
 * Goals:
 ** Reduce blast radius in case of compromise
-** Modularise our data-center
+** Modularise our data-center(s)
 ** Feasible and incremental exit-strategy
-** Divide and conquer
 * Rules:
 ** Applications communicate over public internet
 ** Use well-defined interfaces
 ** No VPN connections between accounts
-* Currently in hybrid-mode while migration in progress
 
 == afp-core ==
 
