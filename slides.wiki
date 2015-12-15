@@ -142,8 +142,16 @@ Alternatives --> see @README@
 
 ==== Schematic ====
 
-TODO
+<[center]
+<<<images/alppaca.pdf, scale=0.3>>>
+[center]>
 
+==== Details =====
+
+* Listens on @169.254.169.254:80@
+* Prefetches temporary credentials and stores them in memory
+* Always has a valid set of credentials
+* No changes to Amazon SDKs needed
 
 == outro ==
 
