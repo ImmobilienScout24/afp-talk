@@ -13,8 +13,8 @@
 
 --1cm--
 
-* My Twitter: \href{https://twitter.com/esc\_\_\_}{@\@esc\_\_\_@}
 * Company Twitter: \href{https://twitter.com/IS24\_Developer}{@\@IS24\_Developer@}
+* My Twitter: \href{https://twitter.com/esc\_\_\_}{@\@esc\_\_\_@}
 
 == IAM Users and Staic Credentials ==
 
