@@ -48,10 +48,10 @@
 ==== afp-core ====
 
 * ''Custom Federation Broker''
-* Different Providers
-** AD Group Provider (Humans)
-** IP Provider       (Machines)
-* Webapplication
+* Different providers
+** AD group provider (humans)
+** IP provider       (machines)
+* A webapplication
 * One of the few places left that ''does'' have static credentials
 
 ==== Connect AD --> AWS (Humans) ====
