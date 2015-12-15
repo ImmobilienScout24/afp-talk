@@ -20,16 +20,26 @@
 * Doing Python and Cloud
 * \href{https://twitter.com/esc\_\_\_}{@\@esc\_\_\_@}
 
-== IAM Users and Staic Credentials ==
+
+== Our Problem ==
 
 ==== Outline ====
 
 \tableofcontents[currentsection]
 
+==== Our Problem ====
+
+* Making the data-enter ''cloud-ready'''
+* Easy and secure AWS service usage
+* Temporary credentials for machines and humans
+
 ==== IAM Users and Static Credentials ====
 
-* IAM Users
+* ''Identity and Access Management'' (IAM) Users
 * Static Credentials
+** @AWS\_ACCESS\_KEY\_ID@ etc...
+** ssh-key
+** Basically anything w/o and expiry date
 * This is Bad™
 
 --1cm--
@@ -38,9 +48,14 @@
 
 ==== Multi-Account Paradigm ====
 
-* We use multiple accounts
-* Reduce blast radius in case of compromise
-* Applications communicate over public internet
+* We use multiple AWS accounts
+* Goals:
+** Reduce blast radius in case of compromise
+** Modularise our data-center
+* Rules:
+** Applications communicate over public internet
+** Use well-defined interfaces
+** No VPN connections between accounts
 * Currently in hybrid-mode while migration in progress
 
 == afp-core ==
@@ -53,7 +68,7 @@
 
 * ''Custom Federation Broker''
 * Different providers
-** AD group provider (humans)
+** Linux group provider (humans)
 ** IP provider       (machines)
 * A webapplication
 * One of the few places left that ''does'' have static credentials
@@ -61,11 +76,11 @@
 
 ==== Connect AD --> AWS (Humans) ====
 
-* Special groups in AD: @aws-accout-role@
+* Special groups in AD: @aws-<ACCOUNT>-<ROLE>@
 * AD users are members of such groups
-* E.g. @aws\_redecorator\_read-only@
-* --> role: @read-only@ in accout @redecorator@
-* (Yes it is configurable)
+* E.g. @aws\_account1\_read-only@
+* --> role: @account@ in accout @redecorator@
+* (Yes, the regex it is configurable)
 
 ==== Schematic ====
 
@@ -121,13 +136,14 @@ $ pip install afp-cli
 
 * At our company: this just works!
 * (Mainly because @https://afp@ can be resolved)
+* --> Otherwise use @index-url@/@--index-url@
 
 ==== Use ====[containsverbatim]
 
 <[consolecode]
 $ afp
-redecorator     read-only
-smarthome       access-all-areas, read-only
+account1     read-only
+account2     access-all-areas, read-only
 $ afp smarthome
 ...
 (AWS: smarthome/access-all-areas 59 min) $ aws s3 ls
