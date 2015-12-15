@@ -29,7 +29,7 @@
 
 ==== Our Problem ====
 
-* Making the data-enter ''cloud-ready'''
+* Making the 2000 machines in the data-center ''cloud-ready'''
 * Easy and secure AWS service usage
 * Temporary credentials for machines and humans
 
