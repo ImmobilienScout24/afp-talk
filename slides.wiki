@@ -83,6 +83,10 @@
 * Get and show temporary credentials for the selected account and role
 * Automatic login to the AWS management console for the desired account
 
+--1cm--
+
+* See also: \href{https://docs.aws.amazon.com/IAM/latest/UserGuide/id\_roles\_providers\_enable-console-custom-url.html}{Creating a URL that Enables Federated Users to Access the AWS Management Console (Custom Federation Broker)}
+
 ==== Screenshot ====
 
 TODO
