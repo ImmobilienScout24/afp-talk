@@ -1,5 +1,5 @@
 base = slides
-slidefilename = NAME
+slidefilename = haenel-afp
 
 .PHONY: git-sha
 
