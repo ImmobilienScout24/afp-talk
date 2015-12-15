@@ -172,9 +172,9 @@ $ pip install afp-cli
 $ afp
 account1     read-only
 account2     access-all-areas, read-only
-$ afp smarthome
+$ afp account2
 ...
-(AWS: smarthome/access-all-areas 59 min) $ aws s3 ls
+(AWS: account2/access-all-areas 59 min) $ aws s3 ls
 ...
 [consolecode]>
 
@@ -188,7 +188,7 @@ Alternatives --> see @README@
 
 ==== ''Instance Metadata Service'' (IMS) ====[containsverbatim]
 
-* Available on @169.254.169.254.169:80@ on every EC2 instance
+* Available on @169.254.169.254:80@ on every EC2 instance
 * Provides information about the machines
 * Also provides temporary security credentials
 
