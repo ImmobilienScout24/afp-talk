@@ -95,7 +95,7 @@
 * Special groups in AD: @aws-<ACCOUNT>-<ROLE>@
 * AD users are members of such groups
 * E.g. @aws\_account1\_read-only@
-* --> role: @account@ in accout @redecorator@
+* --> role: @read_only@ in accout @account1@
 * (Yes, the regex it is configurable)
 
 --1cm--
@@ -244,7 +244,7 @@ $ curl 169.254.169.254/latest/meta-data/iam/security-credentials/test_role
 
 ==== Further Uses: on EC2 in the Cloud ====
 
-* Run @afp-alppaca@ on an EC2 instance?
+* Run afp-alppaca on an EC2 instance?
 * Yes, to allow cross-account access
 
 --1cm--
