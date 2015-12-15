@@ -260,6 +260,7 @@ $ curl 169.254.169.254/latest/meta-data/iam/security-credentials/test_role
 ==== Alternatives? ====
 
 * \href{https://github.com/hashicorp/vault}{hashicorp/vault}
+* \href{https://github.com/AdRoll/hologram}{AdRoll/hologram}
 
 --1cm--
 
