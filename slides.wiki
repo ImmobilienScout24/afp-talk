@@ -46,6 +46,12 @@
 
 * --> Mine Bitcoins if lost
 
+==== Our Solution ====
+
+<[center]
+<<<images/solution.pdf, scale=0.25>>>
+[center]>
+
 ==== Multi-Account Paradigm ====
 
 * We use multiple AWS accounts
