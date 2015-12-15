@@ -164,7 +164,7 @@ Alternatives --> see @README@
 
 \tableofcontents[currentsection]
 
-=== Alternatives? ===
+==== Alternatives? ====
 
 * \href{hashicorp/vault}{https://github.com/hashicorp/vault}
 
