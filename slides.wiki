@@ -29,7 +29,8 @@
 
 ==== Our Problem ====
 
-* Making the 2000 machines in the data-center ''cloud-ready'''
+* Connect the office to the cloud (no VPN)
+* Making the 2000 machines in the data-center ''cloud-ready''
 * Easy and secure AWS service usage
 * Temporary credentials for machines and humans
 
@@ -52,7 +53,7 @@
 <<<images/solution.pdf, scale=0.25>>>
 [center]>
 
-==== Enter The AFP Project ====
+==== Enter: The AFP Project ====
 
 <[center]
 <<<images/solution-afp.pdf, scale=0.25>>>
@@ -78,6 +79,7 @@
 
 ==== afp-core ====
 
+* ''AWS Federation Proxy'' (AFP)
 * ''Custom Federation Broker''
 * Different providers
 ** Linux group provider (humans)
@@ -170,7 +172,7 @@ Alternatives --> see @README@
 
 \tableofcontents[currentsection]
 
-==== afp-proxy / alppaca ====
+==== afp-alppaca ====
 
 * Probably the most interesting component
 * Enables temporary credentials for machines
