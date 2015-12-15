@@ -78,7 +78,7 @@
 
 * Web-frontend for afp-core
 * Give an overview of all available accounts and their usable roles for the \
-  logged in user
+  logged-in user
 * Get and show temporary credentials for the selected account and role
 * Automatic login to the AWS management console for the desired account
 
@@ -159,8 +159,13 @@ Alternatives --> see @README@
 
 \tableofcontents[currentsection]
 
+=== Alternatives? ===
+
+* \href{hashicorp/vault}{https://github.com/hashicorp/vault}
+
 ==== Links ====
 
 * All of it is open-source!
 
 * \href{https://immobilienscout24.github.io/afp/}{https://immobilienscout24.github.io/afp/}
+
