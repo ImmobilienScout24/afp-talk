@@ -166,7 +166,7 @@ Alternatives --> see @README@
 
 ==== Alternatives? ====
 
-* \href{hashicorp/vault}{https://github.com/hashicorp/vault}
+* \href{https://github.com/hashicorp/vault}{hashicorp/vault}
 
 --1cm--
 
