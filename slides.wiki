@@ -65,6 +65,8 @@
 * Goals:
 ** Reduce blast radius in case of compromise
 ** Modularise our data-center
+** Feasible and incremental exit-strategy
+** Divide and conquer
 * Rules:
 ** Applications communicate over public internet
 ** Use well-defined interfaces
