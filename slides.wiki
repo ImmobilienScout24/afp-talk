@@ -163,8 +163,8 @@ $ pip install afp-cli
 * At our company: this just works!
 * (Mainly because @https://afp@ can be resolved)
 ** Otherwise use:
-** --> @index-url@(config)
-** --> @-{}-index-url@(command-line)
+** --> @api-url@(config)
+** --> @-{}-api-url@(command-line)
 
 ==== Use ====[containsverbatim]
 
