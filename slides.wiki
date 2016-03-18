@@ -11,8 +11,8 @@
 
 --1cm--
 
-* 2000 Machines in data-center
-* 17 Years in IT
+* 2000 (virtual-)machines in data-center
+* 18 years in IT
 
 ==== About Me ====
 
@@ -48,16 +48,26 @@
 
 ==== IAM Users and Static Credentials ====
 
-* ''Identity and Access Management'' (IAM) Users
-* Static Credentials
+* ''Identity and Access Management'' (IAM) users
+* Static credentials
 ** @AWS\_ACCESS\_KEY\_ID@ etc...
 ** ssh-key
-** Basically anything w/o and expiry date
+** Basically anything w/o an expiry date
+* How everyone starts with AWS
 * This is Bad™
 
---1cm--
+--0.5cm--
 
 * --> Mine Bitcoins if lost
+* --> Doesn't scale to larger organizations
+
+==== What are Temporaray Credentials ====
+
+* AWS feature: ''Secure Token Service'' (STS)
+* Configure roles in you account that can be assumed
+* A call to @STS:AssumeRole@ yields temporary credentials
+* Still needs a single technical IAM user
+* However: this can be masqueraded (no shared password
 
 ==== Multi-Account Paradigm ====
 
@@ -69,6 +79,7 @@
 * Rules:
 ** Use well-defined interfaces
 ** No VPN connections between accounts
+** Use secure puplic APIs
 
 == afp-core ==
 
@@ -232,6 +243,7 @@ $ curl 169.254.169.254/latest/meta-data/iam/security-credentials/test_role
 * Always has a valid set of credentials
 ** Always able to deliver them in sub 1 second
 ** No changes to Amazon SDKs needed
+** Attempt to refresh ''before'' the really expire
 * Roles are in the special @dc-account@
 
 ==== Special Feature: Under the Hood @AssumeRole@ ====
