@@ -72,6 +72,7 @@
 ==== Multi-Account Paradigm ====
 
 * We use multiple AWS accounts
+* 45 as of 2016-03-19
 * Goals:
 ** Reduce blast radius in case of compromise
 ** Modularise our data-center(s)
