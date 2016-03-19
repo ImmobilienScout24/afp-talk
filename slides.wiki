@@ -61,13 +61,13 @@
 * --> Mine Bitcoins if lost
 * --> Doesn't scale to larger organizations
 
-==== What are Temporaray Credentials ====
+==== What are Temporaray Credentials? ====
 
 * AWS feature: ''Secure Token Service'' (STS)
 * Configure roles in you account that can be assumed
 * A call to @STS:AssumeRole@ yields temporary credentials
 * Still needs a single technical IAM user
-* However: this can be masqueraded (no shared password
+* However: this can be masqueraded (no shared password)
 
 ==== Multi-Account Paradigm ====
 
