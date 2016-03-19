@@ -279,26 +279,15 @@ $ curl 169.254.169.254/latest/meta-data/iam/security-credentials/test_role
 
 ==== Kudos ====
 
-Enrico Heine,
-Konrad Hosemann,
-Marco Hoyer,
-Michael Kuehne,
-Oliver Schoenherr,
-Ravi Yadav,
-Robert J. Will,
-Schlomo Schapiro,
-Sebastian Spoerer,
-Sebastian Stiehl,
-Sergej Domme,
-Stefan Neben,
-Stefan Nordhausen,
-Tobias Höynck,
-Tobias Vollmer,
-Valentin Haenel,
+Boris Petersen, Sebastian Spoerer, Michael Kuehne, Thomas Lehmann, Marco Hoyer,
+Oliver Schoenherr, Konrad Hosemann, Schlomo Schapiro, Robert J. Will, Sebastian
+Stiehl, Sebatian Herold, Enrico Heine, Ravi Yadav, László Károlyi, Sergej
+Domme, Stefan Neben, Tobias Vollmer, Tobias Höynck, Stefan Nordhausen, Valentin
+Haenel
 
 --1cm--
 
-As per @git-log@ on 15.12.2015
+As per @git-log@ on 19.03.2016
 
 ==== Links ====
 
