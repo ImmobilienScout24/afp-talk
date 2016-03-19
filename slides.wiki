@@ -37,13 +37,13 @@
 ==== Our Solution ====
 
 <[center]
-<<<images/solution.pdf, scale=0.25>>>
+<<<images/solution.pdf, scale=0.2>>>
 [center]>
 
 ==== Enter: The AFP Project ====
 
 <[center]
-<<<images/solution-afp.pdf, scale=0.25>>>
+<<<images/solution-afp.pdf, scale=0.2>>>
 [center]>
 
 ==== IAM Users and Static Credentials ====
@@ -118,7 +118,7 @@
 ==== Schematic ====
 
 <[center]
-<<<images/afp-core.pdf, scale=0.3>>>
+<<<images/afp-core.pdf, scale=0.2>>>
 [center]>
 
 == afp-web ==
