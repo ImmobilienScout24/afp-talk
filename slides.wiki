@@ -97,7 +97,7 @@
 
 ==== afp-core ====
 
-* A webapplication
+* A (backend-)webapplication
 * One of the few places left that ''does'' have static credentials
 * Uses ''Secure Token Service'' (STS) and ''AssumeRole''
 
@@ -107,7 +107,7 @@
 * AD users are members of such groups
 * E.g. @aws\_account1\_read-only@
 * --> role: @read\_only@ in accout @account1@
-* (Yes, the regex it is configurable)
+* (Yes, the regex is configurable)
 
 --1cm--
 
